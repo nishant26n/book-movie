@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card p,
+.card img {
+  max-width: 290px;
+}
+
+.card button {
+  border: none;
+  background-color: #03394b;
+  color: #fafaff;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.movie {
+  margin: 3rem;
+  background-color: #b5dce9;
+  border-radius: 10px;
+  padding: 1rem;
+}

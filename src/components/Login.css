@@ -1,0 +1,39 @@
+.login-box {
+  margin: 5rem;
+}
+
+.login {
+  text-align: center;
+  margin: 10px;
+}
+
+.input-field {
+  margin: 10px;
+}
+
+.input-field p {
+  padding-right: 1rem;
+}
+
+.login-container .input-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-btn,
+.google-btn {
+  border: none;
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+.login-btn {
+  background-color: rgba(198, 198, 198, 0.933);
+}
+
+.google-btn {
+  margin-top: 10px;
+  background-color: green;
+  color: #fafaff;
+}
