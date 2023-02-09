@@ -1,3 +1,9 @@
+.title-header {
+  text-align: center;
+  margin-top: 2rem;
+  color: #233142;
+}
+
 .card {
   display: flex;
   flex-wrap: wrap;
@@ -19,7 +25,7 @@
 
 .movie {
   margin: 3rem;
-  background-color: #b5dce9;
+  background-color: #e3e3e3;
   border-radius: 10px;
   padding: 1rem;
 }

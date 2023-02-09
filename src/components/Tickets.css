@@ -1,0 +1,32 @@
+.seat-container {
+  background-image: url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+  min-height: 100vh;
+}
+
+.seat-title {
+  color: #e3e3e3;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.seat-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.seat-btn button {
+  border: none;
+  padding: 2rem;
+  cursor: pointer;
+  margin: 85px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .seat-btn button {
+    margin: 40px;
+  }
+}

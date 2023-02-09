@@ -14,7 +14,7 @@ const Login = () => {
   return (
     <div className="login-box">
       <div className="login">
-        <h2>Login</h2>
+        <h2>Movie Booking Login 🍿</h2>
       </div>
 
       <form onSubmit={handleSubmit} className="login-container">
@@ -29,7 +29,7 @@ const Login = () => {
         </div>
 
         <div className="input-field">
-          <p>Passowrd</p>
+          <p>Password</p>
           <input
             type="passowrd"
             required
@@ -43,11 +43,11 @@ const Login = () => {
             Login
           </button>
         </NavLink>
-      </form>
 
-      <NavLink to="/home">
-        <button className="google-btn">Continue with Google</button>
-      </NavLink>
+        <NavLink to="/home">
+          <button className="google-btn">Continue with Google</button>
+        </NavLink>
+      </form>
     </div>
   );
 };

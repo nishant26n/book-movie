@@ -1,0 +1,32 @@
+.movie {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie h2 {
+  text-align: center;
+  padding: 5px 0 5px 0;
+}
+
+.movie p {
+  padding: 5px;
+}
+
+.movie img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+.movie button {
+  border-radius: 10px;
+}
+
+.book-ticket {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #101010;
+}

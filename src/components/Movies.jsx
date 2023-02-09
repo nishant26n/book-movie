@@ -1,19 +1,21 @@
 import React from "react";
-import "./Home.css";
+import "./Movies.css";
+import { Link } from "react-router-dom";
 
-const Movies = ({ movieData, bookTicket }) => {
+const Movies = ({ imgSrc, name, desc, key }) => {
   return (
-    <div className="card">
-      {movieData.map((movie, i) => (
-        <div>
-          <div className="movie" key={i}>
-            <img src={movie.img} alt="img" />
-            <h2> {movie.name}</h2>
-            <p>{movie.desc}</p>
-            <button onClick={bookTicket}>Book Tickets</button>
-          </div>
-        </div>
-      ))}
+    <div className="movie" key={key}>
+      <img src={imgSrc} alt="img" />
+      <h2>{name}</h2>
+      <p>{desc}</p>
+      <div className="ticket-btn">
+        <Link
+          className="book-ticket"
+          to={{ pathname: `tickets/${name}`, state: { name } }}
+        >
+          <button>Book Tickets</button>
+        </Link>
+      </div>
     </div>
   );
 };
