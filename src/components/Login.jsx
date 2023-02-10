@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [passw, setPassw] = useState("");
   const [dataInput, setDataInput] = useState("");
+
   const handleSubmit = () => {
     const info = { email: email, passw: passw };
     setDataInput([info]);
+    console.log(info);
   };
 
   return (
@@ -17,7 +19,10 @@ const Login = () => {
         <h2>Movie Booking Login 🍿</h2>
       </div>
 
-      <form onSubmit={handleSubmit} className="login-container">
+      <form
+        onSubmit={(event) => event.preventDefault()}
+        className="login-container"
+      >
         <div className="input-field">
           <p>Email</p>
           <input
@@ -31,22 +36,22 @@ const Login = () => {
         <div className="input-field">
           <p>Password</p>
           <input
-            type="passowrd"
+            type="password"
             required
             value={passw}
             onChange={(e) => setPassw(e.target.value)}
           />
         </div>
 
-        <NavLink to="/home">
-          <button type="submit" className="login-btn">
+        <Link to="/home">
+          <button onClick={handleSubmit} type="submit" className="login-btn">
             Login
           </button>
-        </NavLink>
+        </Link>
 
-        <NavLink to="/home">
+        <Link to="/home">
           <button className="google-btn">Continue with Google</button>
-        </NavLink>
+        </Link>
       </form>
     </div>
   );
