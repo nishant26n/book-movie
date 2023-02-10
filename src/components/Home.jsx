@@ -11,12 +11,13 @@ const Home = () => {
         <div className="movie-cards">
           <div className="card">
             {movieData.map((movie, i) => (
-              <Movies
-                name={movie.name}
-                desc={movie.desc}
-                imgSrc={movie.img}
-                key={i}
-              />
+              <div key={i}>
+                <Movies
+                  name={movie.name}
+                  desc={movie.desc}
+                  imgSrc={movie.img}
+                />
+              </div>
             ))}
           </div>
         </div>

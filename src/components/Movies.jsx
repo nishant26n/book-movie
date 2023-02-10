@@ -2,9 +2,9 @@ import React from "react";
 import "./Movies.css";
 import { Link } from "react-router-dom";
 
-const Movies = ({ imgSrc, name, desc, key }) => {
+const Movies = ({ imgSrc, name, desc }) => {
   return (
-    <div className="movie" key={key}>
+    <div className="movie">
       <img src={imgSrc} alt="img" />
       <h2>{name}</h2>
       <p>{desc}</p>
