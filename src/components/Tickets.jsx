@@ -7,8 +7,8 @@ class Tickets extends React.Component {
   };
 
   render() {
-    const booked = () => {
-      alert("Succesfully booked!!");
+    const booked = (event) => {
+      alert(`Succesfully booked Seat ${event.target.innerText}`);
     };
 
     return (
